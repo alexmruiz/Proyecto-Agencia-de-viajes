@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: servidor-eureka
+  cloud:
+    config:
+      enabled: true
+  config: # Localizacion del Spring Cloud Config
+    import: configserver:http://localhost:8888
